@@ -15,3 +15,10 @@ type cases = [
     >
   >,
 ]
+
+// My Example
+const correctUse: TupleToObject<['name', 'lastname', 1]> = {
+  name: 'name',
+  lastname: 'lastname',
+  1: 1
+}
