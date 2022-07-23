@@ -6,3 +6,6 @@ type cases = [
   Expect<Equal<First<[]>, never>>,
   Expect<Equal<First<[undefined]>, undefined>>,
 ]
+
+//Example
+const correct: First<[1,2,3]> = 1;
