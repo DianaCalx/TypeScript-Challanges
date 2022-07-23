@@ -1,1 +1,1 @@
-export type If<C, T, F> = any
+export type If<Val extends boolean, F, S> = Val extends true ? F : S;

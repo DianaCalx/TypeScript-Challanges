@@ -7,3 +7,6 @@ type cases = [
 
 // @ts-expect-error
 type error = If<null, 'a', 'b'>
+
+//My Example
+const correctIf: If<true,'hello','good bye'> = 'hello';
