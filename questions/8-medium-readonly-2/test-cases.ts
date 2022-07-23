@@ -23,3 +23,12 @@ interface Expected {
   readonly description?: string
   completed: boolean
 }
+
+//My Example
+const book: MyReadonly2<Todo1, 'title' | 'description'> = {
+  title : 'History',
+  description: 'A little description',
+  completed: false
+}
+
+book.completed = true;
