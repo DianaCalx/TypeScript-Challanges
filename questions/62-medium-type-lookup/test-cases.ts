@@ -17,3 +17,21 @@ type cases = [
   Expect<Equal<LookUp<Animal, 'dog'>, Dog>>,
   Expect<Equal<LookUp<Animal, 'cat'>, Cat>>,
 ]
+
+// Example
+interface Car {
+  type: 'nissan'
+  color: 'blue' | 'white'
+  year: '2017' | '2018'
+}
+
+interface Motorcycle {
+  type: 'honda'
+  color: 'black'
+}
+
+const correctLookUp: LookUp<Car | Motorcycle, 'nissan'> = {
+  type: 'nissan',
+  color: 'blue',
+  year: '2018'
+}
