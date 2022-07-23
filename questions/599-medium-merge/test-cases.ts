@@ -19,3 +19,17 @@ type cases = [
     >
   >,
 ]
+
+//My example 
+type Person =  {
+  firstName: string
+}
+
+type Company =  {
+  companyName: string
+}
+
+const Employee:Merge<Person,Company> = {
+  firstName: 'Diana',
+  companyName: 'Ravn'
+} 
