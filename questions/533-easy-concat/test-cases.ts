@@ -11,3 +11,6 @@ type cases = [
     >
   >,
 ]
+
+//My Example
+const correctConcat: Concat<[100,200],[300,500]> = [100,200,300,500];
