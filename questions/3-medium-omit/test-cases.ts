@@ -19,3 +19,9 @@ interface Expected1 {
 interface Expected2 {
   title: string
 }
+
+//My Example
+const correctOmit:  MyOmit<Todo,'title'> = {
+  description: 'Description',
+  completed: false,
+}
