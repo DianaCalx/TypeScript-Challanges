@@ -21,3 +21,8 @@ interface Expected2 {
   title: string
   completed: boolean
 }
+
+// My example
+const objectCorrect: MyPick<Todo, 'title'> = {
+  title: 'History',
+}
