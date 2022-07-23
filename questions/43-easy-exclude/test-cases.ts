@@ -15,3 +15,6 @@ type cases = [
     >
   >,
 ]
+
+//My Example
+const correctExclude: MyExclude<'cat' | 'dog' | 'lion', 'cat'> = 'dog';
