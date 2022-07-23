@@ -7,3 +7,10 @@ interface Todo1 {
   description: string
   completed: boolean
 }
+
+// My example
+const objectReadOnly: MyReadonly<Todo1> = {
+  title: 'Fantasy',
+  description: 'Once Upon a Time',
+  completed: true,
+}
