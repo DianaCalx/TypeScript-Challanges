@@ -13,3 +13,6 @@ type cases = [
   Expect<Equal<Length<typeof tesla>, 4>>,
   Expect<Equal<Length<typeof spaceX>, 5>>,
 ]
+
+//My Example
+const correctTuple: Length<[1,2,3]> = 3;
