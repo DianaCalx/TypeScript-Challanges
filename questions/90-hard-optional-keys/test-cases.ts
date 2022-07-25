@@ -11,3 +11,11 @@ type cases = [
   >,
   Expect<Equal<OptionalKeys<{}>, never>>,
 ]
+
+//My example
+interface interfaceKeys {
+  name: string,
+  lastname: string,
+  cellphone?: string,
+}
+const correctRequiredKeys: OptionalKeys<interfaceKeys> = 'cellphone';
