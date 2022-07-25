@@ -6,3 +6,14 @@ type cases = [
     Equal<GetRequired<{ foo: undefined; bar?: undefined }>, { foo: undefined }>
   >,
 ]
+
+//My example
+interface interfaceEqual {
+  name: string,
+  lastname: string,
+  cellphone?: string,
+}
+const correctEqual: GetRequired<objectEqual> = {
+  name: 'Diana',
+  lastname: 'Calderon'
+}
