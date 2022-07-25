@@ -8,3 +8,6 @@ type cases = [
   Expect<Equal<IsAny<never>, false>>,
   Expect<Equal<IsAny<string>, false>>,
 ]
+
+//My example
+const correctEqual: IsAny<any> = true;
