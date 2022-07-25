@@ -6,3 +6,13 @@ type cases = [
     Equal<GetOptional<{ foo: undefined; bar?: undefined }>, { bar?: undefined }>
   >,
 ]
+
+//My example
+interface interfaceOptional {
+  name: string,
+  lastname: string,
+  cellphone?: string,
+}
+const correctOptional: GetOptional<interfaceOptional> = {
+  cellphone: '7712-7897'
+}
