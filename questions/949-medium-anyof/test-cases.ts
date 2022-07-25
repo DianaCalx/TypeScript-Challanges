@@ -16,3 +16,8 @@ type cases = [
   Expect<Equal<AnyOf<[0, '', false, [], {}]>, false>>,
   Expect<Equal<AnyOf<[]>, false>>,
 ]
+
+//My example
+type arrayAnyOf = ['',[],false];
+
+const correctAnyOf: AnyOf<arrayAnyOf> = false;
