@@ -13,7 +13,7 @@ interface interfaceEqual {
   lastname: string,
   cellphone?: string,
 }
-const correctEqual: GetRequired<objectEqual> = {
+const correctEqual: GetRequired<interfaceEqual> = {
   name: 'Diana',
   lastname: 'Calderon'
 }
